@@ -24,7 +24,8 @@ export const Content = styled.div`
 `;
 
 export const LogoImg =styled.img`
-    width: 200px;
+    width: 300px;
+    border: 2px solid white;
 
     @media screen and (max-width: 500px){
         width: 150px;

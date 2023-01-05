@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import MKLogo from "../../images/White_logo.svg";
 
 import TMDBLogo from "../../images/tmdb_logo.svg";
-
+// Styles
 import { Wrapper, Content, LogoImg, TMDBLogoImg } from "./Header.styles";
 //Context
 import { Context } from "../../context";
