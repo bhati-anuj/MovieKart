@@ -1,4 +1,4 @@
-import styled from "styled-components";
+ import styled from "styled-components";
 
 
 
@@ -20,6 +20,16 @@ export const Content = styled.div`
     a{
         color: var(--white);
         text-decoration: none;
+    }
+    
+    span{
+        border: solid 3px white;
+        padding: 10px;
+        color: var(--white);
+        font-size: large;
+        border-radius: 10px;
+        font-weight: 200;
+
     }
 `;
 

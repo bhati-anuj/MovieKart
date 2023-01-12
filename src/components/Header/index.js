@@ -5,9 +5,11 @@ import MKLogo from "../../images/White_logo.svg";
 
 import TMDBLogo from "../../images/tmdb_logo.svg";
 // Styles
+
 import { Wrapper, Content, LogoImg, TMDBLogoImg } from "./Header.styles";
 //Context
 import { Context } from "../../context";
+import Button from "../Button";
 
 const Header = () => {
   const [user] = useContext(Context);
@@ -19,14 +21,25 @@ const Header = () => {
         <Link to="/">
           <LogoImg src={MKLogo} alt="movieKart-logo" />
         </Link>
+
         {user ? (
-          <span>Logged in as: {user.username}</span>
+          <Link to="/logout">
+          <span className="btn">Logout</span>
+        </Link>
         ) : (
           <Link to="/login">
-            <span>Log in</span>
+            <span className="btn">Login</span>
           </Link>
         )}
-       {/* <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" /> */}
+
+         {/* {user ? (
+          <Link to="/logout">
+            <span>Logout</span>
+          </Link>
+        ) : (
+          <span>Logged in as:</span>
+        )}  */}
+        {/* <TMDBLogoImg src={TMDBLogo} alt="tmdb-logo" /> */}
       </Content>
     </Wrapper>
   );
